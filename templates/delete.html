@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Jogos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+                <form action="{{ request.path }}" method="post">
+                    <h2>Deletar Jogo</h2>
+                    <fieldset>
+                        <div class="form-group">
+                            <p>Deseja deletar o jogo {{ nome_jogo }}</p>
+                            <a href="/"><button type="button" class="btn btn-primary btn-with-margin">Não</button></a>
+                            <button type="submit" class="btn btn-primary btn-with-margin">Sim</button>
+                        </div>
+                    </fieldset>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
